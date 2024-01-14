@@ -66,13 +66,8 @@ class Model(models.Model):
     name = models.CharField(max_length=128, verbose_name='Модель')
 
     shot_desc = models.CharField(
-        verbose_name='краткое описание',
-        max_length=60,
-        blank=True
-    )
-
-    description = models.TextField(
-        verbose_name='описание',
+        verbose_name='коментарий',
+        max_length=252,
         blank=True
     )
 
@@ -93,3 +88,4 @@ class Model(models.Model):
     class Meta:
         verbose_name = 'Модель'
         verbose_name_plural = 'Модели'
+
